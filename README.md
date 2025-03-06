@@ -1,6 +1,8 @@
 # Mycv
 # Prubea subir cosas con la proteccion del master
 # prueba subir cosas con la rama develop
+# prueba subir cosas en develop 2
+# prueba subir cosas desde codebase
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
 
 ## Development server
