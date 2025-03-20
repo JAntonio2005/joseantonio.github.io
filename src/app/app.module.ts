@@ -11,6 +11,9 @@ import { CertificatesComponent } from './certificates/certificates.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { InterestsComponent } from './interests/interests.component';
 
+import { AngularFireModule } from "@angular/fire/compat";
+import { environment } from "../environments/environments";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,9 +27,11 @@ import { InterestsComponent } from './interests/interests.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, // Asegúrate de poner una coma aquí
+    AngularFireModule.initializeApp(environment.firebaseConfig) // Aquí también
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
