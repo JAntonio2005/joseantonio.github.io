@@ -12,7 +12,7 @@ import { LanguagesComponent } from './languages/languages.component';
 import { InterestsComponent } from './interests/interests.component';
 
 import { AngularFireModule } from "@angular/fire/compat";
-import { environment } from "../src/environments/environment";
+import { environment } from "../environments/environments";
 
 @NgModule({
   declarations: [
@@ -27,9 +27,11 @@ import { environment } from "../src/environments/environment";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, // Asegúrate de poner una coma aquí
+    AngularFireModule.initializeApp(environment.firebaseConfig) // Aquí también
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
